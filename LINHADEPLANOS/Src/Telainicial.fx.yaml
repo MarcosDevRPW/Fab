@@ -27,7 +27,7 @@ Telainicial As screen:
                "Selecione o Turno ",
                 "Turno 1",
                 "Turno 2",
-                "Turno 3",
+            
                 
             ]
         PressedFill: =RGBA(125, 86, 162, 1)
@@ -45,9 +45,6 @@ Telainicial As screen:
                "Selecione a Turma",
                 "Turma A",
                 "Turma B",
-                "Turma C",
-                "Turma D",
-                
             ]
         PressedFill: =RGBA(125, 86, 162, 1)
         SelectionFill: =RGBA(125, 86, 162, 1)
