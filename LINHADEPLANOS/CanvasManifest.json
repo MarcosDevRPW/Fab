@@ -92,7 +92,7 @@
       "useguiddatatypes": true,
       "usenonblockingonstartrule": true,
       "webbarcodescanner": false,
-      "zeroalltabindexes": true
+      "zeroalltabindexes": false
     },
     "Author": "",
     "BindingErrorCount": 0,
@@ -111,7 +111,7 @@
     "Id": "2f66524d-082c-4f2b-bc5f-291b232b386e",
     "InstrumentationKey": "",
     "LocalDatabaseReferences": "{}",
-    "ManualOfflineProfileId": null,
+    "ManualOfflineProfileId": "",
     "Name": "Relatórios - Linha de Planos",
     "OriginatingVersion": "1.334",
     "ParserErrorCount": 0,
