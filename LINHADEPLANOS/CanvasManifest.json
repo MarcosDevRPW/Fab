@@ -129,6 +129,8 @@
     "UserLocale": "pt-BR"
   },
   "ScreenOrder": [
-    "Telainicial"
+    "Telainicial",
+    "Relatórios",
+    "Screen2"
   ]
 }
