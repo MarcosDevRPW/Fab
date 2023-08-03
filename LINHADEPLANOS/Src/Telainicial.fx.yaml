@@ -2,7 +2,7 @@ Telainicial As screen:
 
     Rectangle3_1 As rectangle:
         Fill: =RGBA(125, 86, 162, 1)
-        Height: =135
+        Height: =177
         Width: =1366
         ZIndex: =1
 
@@ -10,62 +10,51 @@ Telainicial As screen:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Bold
-        Height: =92
-        Size: =35
+        Height: =177
+        Size: =43
         Text: ="LINHA DE PLANOS"
-        Width: =804
-        X: =562
-        Y: =23
+        Width: =1366
         ZIndex: =2
 
-    turno As dropdown:
+    drop_turno As dropdown:
         BorderColor: =RGBA(125, 86, 162, 1)
         ChevronBackground: =RGBA(125, 86, 162, 1)
         ChevronHoverBackground: =ColorFade(RGBA(125, 86, 162, 1), -20%)
+        Height: =65
         Items: |-
             =[   
-               "Selecione o Turno ",
-                "Turno 1",
-                "Turno 2",
-                "Turno 3",
+               "SELECIONE O TURNO",
+                "TURNO 1",
+                "TURNO 2",
+                "TURNO 3",
                 
             ]
         PressedFill: =RGBA(125, 86, 162, 1)
         SelectionFill: =RGBA(125, 86, 162, 1)
-        X: =304
-        Y: =220
-        ZIndex: =5
+        Width: =355
+        X: =247
+        Y: =321
+        ZIndex: =3
 
-    turma As dropdown:
+    drop_turma As dropdown:
         BorderColor: =RGBA(125, 86, 162, 1)
         ChevronBackground: =RGBA(125, 86, 162, 1)
         ChevronHoverBackground: =ColorFade(RGBA(125, 86, 162, 1), -20%)
+        Height: =65
         Items: |-
             =[   
-               "Selecione a Turma",
-                "Turma A",
-                "Turma B",
-                "Turma C",
-                "Turma D",
-                
+               "SELECIONE A TURMA",
+                "TURMA A",
+                "TURMA B"    
             ]
         PressedFill: =RGBA(125, 86, 162, 1)
         SelectionFill: =RGBA(125, 86, 162, 1)
-        X: =697
-        Y: =220
-        ZIndex: =6
+        Width: =355
+        X: =642
+        Y: =321
+        ZIndex: =4
 
-    assistente As text:
-        BorderColor: =RGBA(125, 86, 162, 1)
-        Default: =""
-        HintText: ="Assistente do turno"
-        HoverBorderColor: =RGBA(125, 86, 162, 1)
-        Width: =328
-        X: =697
-        Y: =369
-        ZIndex: =7
-
-    maquina As dropdown:
+    drop_maquina As dropdown:
         BorderColor: =RGBA(125, 86, 162, 1)
         ChevronBackground: =RGBA(125, 86, 162, 1)
         ChevronHoverBackground: =ColorFade(RGBA(125, 86, 162, 1), -20%)
@@ -81,9 +70,9 @@ Telainicial As screen:
         SelectionFill: =RGBA(125, 86, 162, 1)
         Size: =20
         Width: =317
-        X: =309
-        Y: =544
-        ZIndex: =8
+        X: =266
+        Y: =580
+        ZIndex: =6
 
     L_Maquina As label:
         Align: =Align.Center
@@ -93,17 +82,18 @@ Telainicial As screen:
         Size: =18
         Text: ="MÁQUINA"
         Width: =317
-        X: =309
-        Y: =469
-        ZIndex: =9
+        X: =266
+        Y: =505
+        ZIndex: =7
 
-    op_linha As dropdown:
+    drop_operadorlinha As dropdown:
         BorderColor: =RGBA(125, 86, 162, 1)
         ChevronBackground: =RGBA(125, 86, 162, 1)
         ChevronHoverBackground: =ColorFade(RGBA(125, 86, 162, 1), -20%)
+        Height: =65
         Items: |-
             =[   
-               "Selecione o operador da linha",
+               "SELECIONE O OPERADOR DA LINHA",
                 "Francisco Filho",
                 "Anderson Figueiredo",
                 "Leonardo Alves",
@@ -119,15 +109,16 @@ Telainicial As screen:
             ]
         PressedFill: =RGBA(125, 86, 162, 1)
         SelectionFill: =RGBA(125, 86, 162, 1)
-        Width: =329
-        X: =304
-        Y: =293
-        ZIndex: =10
+        Width: =355
+        X: =247
+        Y: =409
+        ZIndex: =8
 
-    supervisor As dropdown:
+    drop_supervisor As dropdown:
         BorderColor: =RGBA(125, 86, 162, 1)
         ChevronBackground: =RGBA(125, 86, 162, 1)
         ChevronHoverBackground: =ColorFade(RGBA(125, 86, 162, 1), -20%)
+        Height: =65
         Items: |-
             =[   
                "Selecione o supervisor",
@@ -138,35 +129,17 @@ Telainicial As screen:
             ]
         PressedFill: =RGBA(125, 86, 162, 1)
         SelectionFill: =RGBA(125, 86, 162, 1)
-        Width: =329
-        X: =304
-        Y: =369
-        ZIndex: =11
-
-    empilhador As dropdown:
-        BorderColor: =RGBA(125, 86, 162, 1)
-        ChevronBackground: =RGBA(125, 86, 162, 1)
-        ChevronHoverBackground: =ColorFade(RGBA(125, 86, 162, 1), -20%)
-        Items: |-
-            =[   
-               "Selecione o empilhador",
-                "Santos",
-                "Walmir",
-                "Everaldo",
-                "Erike",
-                
-            ]
-        PressedFill: =RGBA(125, 86, 162, 1)
-        SelectionFill: =RGBA(125, 86, 162, 1)
-        X: =697
-        Y: =293
-        ZIndex: =12
+        Width: =352
+        X: =645
+        Y: =409
+        ZIndex: =9
 
     Image1 As image:
-        Height: =135
+        Height: =177
         Image: =Marca_Suzano_Vertical_Negativo_PB
-        Width: =304
-        ZIndex: =13
+        Width: =341
+        X: =1025
+        ZIndex: =11
 
     Button2_9 As button:
         Fill: =RGBA(71, 35, 105, 1)
@@ -177,7 +150,25 @@ Telainicial As screen:
         Size: =16
         Text: ="RELATÓRIOS"
         Width: =269
-        X: =729
-        Y: =488
+        X: =685
+        Y: =524
+        ZIndex: =12
+
+    Image2 As image:
+        Height: =184
+        Image: ='MIMMO_MITO-removebg-preview'
+        Width: =299
+        X: =5
+        ZIndex: =13
+
+    Data As datepicker:
+        BorderColor: =RGBA(125, 86, 162, 1)
+        DefaultDate: =If(Hour(Now()) <= 23 && Hour(Now()) >= 6,Today(),Today()-1)
+        Height: =91
+        IconBackground: =RGBA(125, 86, 162, 1)
+        Size: =24
+        Width: =237
+        X: =546
+        Y: =206
         ZIndex: =14
 

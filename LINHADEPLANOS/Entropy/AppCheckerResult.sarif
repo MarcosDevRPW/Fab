@@ -364,19 +364,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Telainicial.turno.AccessibleLabel"
+                  "fullyQualifiedName": "Telainicial.drop_turno.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Telainicial.turno.AccessibleLabel",
+                  "fullyQualifiedName": "Telainicial.drop_turno.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Telainicial",
-                "type": "Telainicial.turno"
+                "type": "Telainicial.drop_turno"
               }
             }
           ],
@@ -394,19 +394,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Telainicial.turma.AccessibleLabel"
+                  "fullyQualifiedName": "Telainicial.drop_turma.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Telainicial.turma.AccessibleLabel",
+                  "fullyQualifiedName": "Telainicial.drop_turma.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Telainicial",
-                "type": "Telainicial.turma"
+                "type": "Telainicial.drop_turma"
               }
             }
           ],
@@ -424,19 +424,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Telainicial.op_linha.AccessibleLabel"
+                  "fullyQualifiedName": "Telainicial.drop_operadorlinha.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Telainicial.op_linha.AccessibleLabel",
+                  "fullyQualifiedName": "Telainicial.drop_operadorlinha.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Telainicial",
-                "type": "Telainicial.op_linha"
+                "type": "Telainicial.drop_operadorlinha"
               }
             }
           ],
@@ -454,19 +454,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Telainicial.empilhador.AccessibleLabel"
+                  "fullyQualifiedName": "Telainicial.drop_supervisor.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Telainicial.empilhador.AccessibleLabel",
+                  "fullyQualifiedName": "Telainicial.drop_supervisor.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Telainicial",
-                "type": "Telainicial.empilhador"
+                "type": "Telainicial.drop_supervisor"
               }
             }
           ],
@@ -484,19 +484,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Telainicial.supervisor.AccessibleLabel"
+                  "fullyQualifiedName": "Telainicial.Data.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Telainicial.supervisor.AccessibleLabel",
+                  "fullyQualifiedName": "Telainicial.Data.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Telainicial",
-                "type": "Telainicial.supervisor"
+                "type": "Telainicial.Data"
               }
             }
           ],
@@ -514,49 +514,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Telainicial.assistente.AccessibleLabel"
+                  "fullyQualifiedName": "Telainicial.drop_maquina.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Telainicial.assistente.AccessibleLabel",
+                  "fullyQualifiedName": "Telainicial.drop_maquina.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Telainicial",
-                "type": "Telainicial.assistente"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Telainicial.maquina.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Telainicial.maquina.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Telainicial",
-                "type": "Telainicial.maquina"
+                "type": "Telainicial.drop_maquina"
               }
             }
           ],
