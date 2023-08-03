@@ -1,2 +1,35 @@
 Configurações As screen:
 
+    Rectangle3_3 As rectangle:
+        Fill: =RGBA(125, 86, 162, 1)
+        Height: =157
+        Width: =1366
+        ZIndex: =1
+
+    titulo_2 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =157
+        Size: =43
+        Text: ="CONFIGURAÇÕES"
+        Width: =1366
+        ZIndex: =2
+
+    Image1_1 As image:
+        Height: =157
+        Image: =Marca_Suzano_Vertical_Negativo_PB
+        Width: =341
+        X: =1025
+        ZIndex: =3
+
+    Icon1_1 As icon.BackArrow:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =109
+        Icon: =Icon.BackArrow
+        OnSelect: =Navigate(Telainicial,ScreenTransition.Fade)
+        Width: =141
+        X: =28
+        Y: =29
+        ZIndex: =4
+
