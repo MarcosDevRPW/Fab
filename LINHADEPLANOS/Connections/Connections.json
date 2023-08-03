@@ -1,16 +1,1 @@
-{
-  "b626f3b8-c3c2-464f-b42c-2b6e9395b371": {
-    "connectionRef": {
-      "displayName": "Office 365 Outlook",
-      "iconUri": "https://connectoricons-prod.azureedge.net/u/laborbol/partial-builds/390724148/1.0.1641.3327/office365/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_office365"
-    },
-    "datasets": {},
-    "dataSources": [
-      "Office365Outlook"
-    ],
-    "dependencies": {},
-    "dependents": [],
-    "id": "b626f3b8-c3c2-464f-b42c-2b6e9395b371"
-  }
-}
+{}
