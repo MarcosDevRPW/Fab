@@ -1,0 +1,21 @@
+Telainicial As screen:
+
+    Rectangle3_1 As rectangle:
+        Fill: =RGBA(125, 86, 162, 1)
+        Height: =135
+        Width: =1366
+        Y: =150
+        ZIndex: =1
+
+    titulo As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =92
+        Size: =35
+        Text: ="Recebimento de jumbos"
+        Width: =804
+        X: =562
+        Y: =173
+        ZIndex: =2
+
