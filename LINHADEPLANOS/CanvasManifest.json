@@ -111,7 +111,7 @@
     "Id": "2f66524d-082c-4f2b-bc5f-291b232b386e",
     "InstrumentationKey": "",
     "LocalDatabaseReferences": "{}",
-    "ManualOfflineProfileId": "",
+    "ManualOfflineProfileId": null,
     "Name": "Relatórios - Linha de Planos",
     "OriginatingVersion": "1.334",
     "ParserErrorCount": 0,
@@ -129,6 +129,8 @@
     "UserLocale": "pt-BR"
   },
   "ScreenOrder": [
-    "Telainicial"
+    "Telainicial",
+    "Relatórios",
+    "Screen2"
   ]
 }

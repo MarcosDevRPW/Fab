@@ -1,0 +1,90 @@
+Relatórios As screen:
+
+    Button2_4 As button:
+        Fill: =RGBA(71, 35, 105, 1)
+        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+        Height: =98
+        HoverFill: =ColorFade(RGBA(125, 86, 162, 1), -20%)
+        Size: =16
+        Text: ="RECEBIMENTO DE JUMBOS"
+        Width: =269
+        X: =68
+        Y: =604
+        ZIndex: =1
+
+    Rectangle3_2 As rectangle:
+        Fill: =RGBA(125, 86, 162, 1)
+        Height: =135
+        Width: =1366
+        ZIndex: =3
+
+    titulo_1 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =92
+        Size: =35
+        Text: ="RELATÓRIOS"
+        Width: =804
+        X: =562
+        Y: =23
+        ZIndex: =4
+
+    Button2_5 As button:
+        Fill: =RGBA(71, 35, 105, 1)
+        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+        Height: =98
+        HoverFill: =ColorFade(RGBA(125, 86, 162, 1), -20%)
+        Size: =16
+        Text: ="CONTROLE DE PROCESSO"
+        Width: =269
+        X: =385
+        Y: =604
+        ZIndex: =5
+
+    Button2_6 As button:
+        Fill: =RGBA(71, 35, 105, 1)
+        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+        Height: =98
+        HoverFill: =ColorFade(RGBA(125, 86, 162, 1), -20%)
+        Size: =16
+        Text: ="REFUGO ENTRE ORDENS"
+        Width: =269
+        X: =709
+        Y: =604
+        ZIndex: =6
+
+    Button2_7 As button:
+        Fill: =RGBA(71, 35, 105, 1)
+        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+        Height: =98
+        HoverFill: =ColorFade(RGBA(125, 86, 162, 1), -20%)
+        Size: =16
+        Text: ="CONSUMO DE PAPEL"
+        Width: =269
+        X: =1029
+        Y: =604
+        ZIndex: =7
+
+    Button2_8 As button:
+        Fill: =RGBA(71, 35, 105, 1)
+        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+        Height: =98
+        HoverFill: =ColorFade(RGBA(125, 86, 162, 1), -20%)
+        Size: =16
+        Text: ="CONTROLE DE QUALIDADE"
+        Width: =269
+        X: =68
+        Y: =459
+        ZIndex: =8
+
+    Icon1 As icon.BackArrow:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =92
+        Icon: =Icon.BackArrow
+        OnSelect: =Navigate(Telainicial,ScreenTransition.Fade)
+        Width: =126
+        X: =27
+        Y: =23
+        ZIndex: =9
+
