@@ -8,12 +8,16 @@ Configurações As screen:
 
     titulo_2 As label:
         Align: =Align.Center
-        Color: =RGBA(255, 255, 255, 1)
+        BorderColor: =RGBA(0, 0, 0, 1)
+        BorderThickness: =3
+        Fill: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Bold
-        Height: =157
-        Size: =43
-        Text: ="CONFIGURAÇÕES"
-        Width: =1366
+        Height: =80
+        Size: =30
+        Text: ="ADICIONAR PESSOA"
+        Width: =464
+        X: =58
+        Y: =412
         ZIndex: =2
 
     Image1_1 As image:
@@ -23,6 +27,50 @@ Configurações As screen:
         X: =1025
         ZIndex: =3
 
+    Button2_10 As button:
+        Fill: =RGBA(125, 86, 162, 1)
+        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+        Height: =98
+        HoverFill: =ColorFade(RGBA(125, 86, 162, 1), -20%)
+        OnSelect: |-
+            =If(IsBlank(combo_pessoas.Selected.Email) <> true,
+            'Fluxo-AdicionarMembroLinhadePlanos'.Run(combo_pessoas.Selected.Email);
+            Notify("ACESSO CONCEDIDO A " & combo_pessoas.Selected.DisplayName,NotificationType.Success,10000),
+            Notify("Você precisar selecionar a pessoa",NotificationType.Error,1000)
+            );
+            Reset(combo_pessoas)
+        Size: =16
+        Text: ="CONCEDER ACESSO"
+        Width: =269
+        X: =134
+        Y: =651
+        ZIndex: =4
+
+    combo_pessoas As combobox:
+        DisplayFields: =["DisplayName","Email","Picture"]
+        Height: =116
+        InputTextPlaceholder: ="Localizar Pessoas"
+        Items: =Choices([@'Pessoas - Adicionadas'].Pessoas)
+        SearchFields: =["DisplayName"]
+        SearchItems: =Choices('Pessoas - Adicionadas'.Pessoas,combo_pessoas.SearchText)
+        SelectMultiple: =false
+        Template: =ListItemTemplate.Person
+        Width: =464
+        X: =58
+        Y: =510
+        ZIndex: =5
+
+    titulo_3 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =152
+        Size: =43
+        Text: ="CONFIGURAÇÕES"
+        Width: =1366
+        Y: =5
+        ZIndex: =9
+
     Icon1_1 As icon.BackArrow:
         Color: =RGBA(255, 255, 255, 1)
         Height: =109
@@ -31,40 +79,5 @@ Configurações As screen:
         Width: =141
         X: =28
         Y: =29
-        ZIndex: =4
-
-    Button2_10 As button:
-        Fill: =RGBA(71, 35, 105, 1)
-        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
-        Height: =98
-        HoverFill: =ColorFade(RGBA(125, 86, 162, 1), -20%)
-        OnSelect: ='Fluxo-AdicionarMembroLinhadePlanos'.Run("")
-        Size: =16
-        Text: ="ADICIONAR PESSOA"
-        Width: =269
-        X: =82
-        Y: =578
-        ZIndex: =5
-
-    combo_pessoas As combobox:
-        DisplayFields: =["DisplayName","Email","Picture"]
-        Height: =84
-        IsSearchable: =false
-        Items: |-
-            =UsuáriosdoOffice365.SearchUser({top:10})
-        SearchFields: =["DisplayName"]
-        SearchItems: =[]
-        SelectMultiple: =false
-        Template: =ListItemTemplate.Person
-        Width: =419
-        X: =28
-        Y: =457
-        ZIndex: =6
-
-    mail_text As text:
-        Default: =""
-        HintText: ="Digite aqui o Email"
-        X: =240
-        Y: =250
-        ZIndex: =9
+        ZIndex: =10
 

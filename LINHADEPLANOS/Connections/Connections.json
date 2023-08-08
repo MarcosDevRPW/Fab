@@ -60,5 +60,27 @@
     "dependencies": {},
     "dependents": [],
     "id": "85582cfd-8bd5-4847-9a25-d246bfcc1052"
+  },
+  "9416994c-0f29-4f1a-ac6d-619d248405dc": {
+    "connectionRef": {
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/shgogna/globalperconnector-train1/1.0.1639.3312/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
+    },
+    "datasets": {
+      "https://suzano.sharepoint.com/sites/LinhadePlanos": {
+        "dataSources": {
+          "Pessoas - Adicionadas": {
+            "tableName": "51aae855-f440-4a2c-bfaa-58f6163c2f35"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Pessoas - Adicionadas"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "9416994c-0f29-4f1a-ac6d-619d248405dc"
   }
 }

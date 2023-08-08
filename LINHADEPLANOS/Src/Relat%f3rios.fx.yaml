@@ -36,7 +36,7 @@ Relatórios As screen:
         Height: =98
         HoverFill: =ColorFade(RGBA(125, 86, 162, 1), -20%)
         Size: =16
-        Text: ="CONTROLE DE PROCESSO"
+        Text: ="CONTROLE DE PROCESSO/QUALIDADE"
         Width: =269
         X: =385
         Y: =604
@@ -65,18 +65,6 @@ Relatórios As screen:
         X: =1029
         Y: =604
         ZIndex: =7
-
-    Button2_8 As button:
-        Fill: =RGBA(71, 35, 105, 1)
-        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
-        Height: =98
-        HoverFill: =ColorFade(RGBA(125, 86, 162, 1), -20%)
-        Size: =16
-        Text: ="CONTROLE DE QUALIDADE"
-        Width: =269
-        X: =68
-        Y: =459
-        ZIndex: =8
 
     Icon1 As icon.BackArrow:
         Color: =RGBA(255, 255, 255, 1)
