@@ -1,5 +1,5 @@
 {
-  "30508343-33c6-41a4-85b9-35544a4ad438": {
+  "057ba5ef-64aa-4f6c-926b-f74c0bae5c07": {
     "connectionRef": {
       "displayName": "Microsoft Teams",
       "iconUri": "https://connectoricons-prod.azureedge.net/u/anladwig/releases/teamsRetryLogic/1.0.1646.3350/teams/icon.png",
@@ -9,17 +9,17 @@
     "dataSources": [],
     "dependencies": {},
     "dependents": [
-      "690cfaa5-8df9-4110-822a-fbcf02738784"
+      "4e195e67-09c8-48d1-8e7c-87db49ea77fb"
     ],
-    "id": "30508343-33c6-41a4-85b9-35544a4ad438"
+    "id": "057ba5ef-64aa-4f6c-926b-f74c0bae5c07"
   },
-  "690cfaa5-8df9-4110-822a-fbcf02738784": {
+  "4e195e67-09c8-48d1-8e7c-87db49ea77fb": {
     "connectionRef": {
       "displayName": "Logic flows",
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1645/1.0.1645.3345/logicflows/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
       "parameterHints": {
-        "30508343-33c6-41a4-85b9-35544a4ad438": {
+        "057ba5ef-64aa-4f6c-926b-f74c0bae5c07": {
           "value": "shared_teams"
         },
         "workflowEntityId": {},
@@ -29,7 +29,7 @@
       },
       "parameterHintsV2": {
         "shared_teams": {
-          "value": "30508343-33c6-41a4-85b9-35544a4ad438"
+          "value": "057ba5ef-64aa-4f6c-926b-f74c0bae5c07"
         },
         "workflowEntityId": {},
         "workflowName": {
@@ -42,10 +42,10 @@
       "Fluxo-AdicionarMembroLinhadePlanos"
     ],
     "dependencies": {
-      "shared_teams": "30508343-33c6-41a4-85b9-35544a4ad438"
+      "shared_teams": "057ba5ef-64aa-4f6c-926b-f74c0bae5c07"
     },
     "dependents": [],
-    "id": "690cfaa5-8df9-4110-822a-fbcf02738784"
+    "id": "4e195e67-09c8-48d1-8e7c-87db49ea77fb"
   },
   "85582cfd-8bd5-4847-9a25-d246bfcc1052": {
     "connectionRef": {
@@ -72,12 +72,16 @@
         "dataSources": {
           "Pessoas - Adicionadas": {
             "tableName": "51aae855-f440-4a2c-bfaa-58f6163c2f35"
+          },
+          "Recebimentojumbos": {
+            "tableName": "c90b032d-ed28-400e-b7c8-cda730bc4518"
           }
         }
       }
     },
     "dataSources": [
-      "Pessoas - Adicionadas"
+      "Pessoas - Adicionadas",
+      "Recebimentojumbos"
     ],
     "dependencies": {},
     "dependents": [],

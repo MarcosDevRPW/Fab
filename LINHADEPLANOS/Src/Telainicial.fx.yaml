@@ -16,7 +16,7 @@ Telainicial As screen:
         Width: =1366
         ZIndex: =2
 
-    drop_turno As dropdown:
+    turno As dropdown:
         BorderColor: =RGBA(125, 86, 162, 1)
         ChevronBackground: =RGBA(125, 86, 162, 1)
         ChevronHoverBackground: =ColorFade(RGBA(125, 86, 162, 1), -20%)
@@ -36,7 +36,7 @@ Telainicial As screen:
         Y: =321
         ZIndex: =3
 
-    drop_turma As dropdown:
+    turma As dropdown:
         BorderColor: =RGBA(125, 86, 162, 1)
         ChevronBackground: =RGBA(125, 86, 162, 1)
         ChevronHoverBackground: =ColorFade(RGBA(125, 86, 162, 1), -20%)
@@ -86,7 +86,7 @@ Telainicial As screen:
         Y: =505
         ZIndex: =7
 
-    drop_operadorlinha As dropdown:
+    op_linha As dropdown:
         BorderColor: =RGBA(125, 86, 162, 1)
         ChevronBackground: =RGBA(125, 86, 162, 1)
         ChevronHoverBackground: =ColorFade(RGBA(125, 86, 162, 1), -20%)
@@ -114,7 +114,7 @@ Telainicial As screen:
         Y: =409
         ZIndex: =8
 
-    drop_supervisor As dropdown:
+    supervisor As dropdown:
         BorderColor: =RGBA(125, 86, 162, 1)
         ChevronBackground: =RGBA(125, 86, 162, 1)
         ChevronHoverBackground: =ColorFade(RGBA(125, 86, 162, 1), -20%)

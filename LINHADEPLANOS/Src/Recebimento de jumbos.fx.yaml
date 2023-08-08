@@ -1,2 +1,201 @@
 "'Recebimento de jumbos' As screen":
 
+    Rectangle3_6 As rectangle:
+        Fill: =RGBA(125, 86, 162, 1)
+        Height: =157
+        Width: =1366
+        ZIndex: =1
+
+    Image1_4 As image:
+        Height: =157
+        Image: =Marca_Suzano_Vertical_Negativo_PB
+        Width: =341
+        X: =1025
+        ZIndex: =2
+
+    titulo_6 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =152
+        Size: =43
+        Text: ="RECEBIMENTO DE JUMBOS"
+        Width: =1366
+        Y: =5
+        ZIndex: =3
+
+    Icon1_4 As icon.BackArrow:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =109
+        Icon: =Icon.BackArrow
+        OnSelect: =Navigate(Relatórios,ScreenTransition.Fade)
+        Width: =141
+        X: =28
+        Y: =29
+        ZIndex: =4
+
+    TextInput1_ni As text:
+        BorderColor: =RGBA(125, 86, 162, 1)
+        Default: =""
+        Format: =TextFormat.Number
+        HintText: ="NI do jumbo"
+        HoverBorderColor: =RGBA(125, 86, 162, 1)
+        Width: =328
+        X: =192
+        Y: =319
+        ZIndex: =5
+
+    TextInput1_lote As text:
+        BorderColor: =RGBA(125, 86, 162, 1)
+        Default: =""
+        Format: =TextFormat.Number
+        HintText: ="Lote"
+        HoverBorderColor: =RGBA(125, 86, 162, 1)
+        Width: =328
+        X: =192
+        Y: =387
+        ZIndex: =6
+
+    TextInput1_n As text:
+        BorderColor: =RGBA(125, 86, 162, 1)
+        Default: =""
+        Format: =TextFormat.Number
+        HintText: ="Nº do jumbo"
+        HoverBorderColor: =RGBA(125, 86, 162, 1)
+        Width: =328
+        X: =192
+        Y: =458
+        ZIndex: =7
+
+    TextInput1_peso As text:
+        BorderColor: =RGBA(125, 86, 162, 1)
+        Default: =""
+        Format: =TextFormat.Number
+        HintText: ="Peso (kg)"
+        HoverBorderColor: =RGBA(125, 86, 162, 1)
+        Width: =328
+        X: =192
+        Y: =527
+        ZIndex: =8
+
+    produto As dropdown:
+        BorderColor: =RGBA(125, 86, 162, 1)
+        ChevronBackground: =RGBA(125, 86, 162, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(125, 86, 162, 1), -20%)
+        Items: |-
+            =[   
+                "Selecione o Produto",
+                "CPR",
+                "FLO INST",
+                "LA VIE",
+                "SCL",
+                "TPR 24",
+                "TPR 30",
+                "TUTTO",    
+            ]
+        PressedFill: =RGBA(125, 86, 162, 1)
+        SelectionFill: =RGBA(125, 86, 162, 1)
+        X: =192
+        Y: =246
+        ZIndex: =9
+
+    Dropdown5 As dropdown:
+        BorderColor: =RGBA(125, 86, 162, 1)
+        ChevronBackground: =RGBA(125, 86, 162, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(125, 86, 162, 1), -20%)
+        Height: =41
+        Items: |-
+            =[   
+                "O jumbo foi devolvido para estoque?",
+                "Sim",
+                "Não",
+                   
+            ]
+        PressedFill: =RGBA(125, 86, 162, 1)
+        SelectionFill: =RGBA(125, 86, 162, 1)
+        Width: =424
+        X: =694
+        Y: =246
+        ZIndex: =10
+
+    Dropdown6 As dropdown:
+        BorderColor: =RGBA(125, 86, 162, 1)
+        ChevronBackground: =RGBA(125, 86, 162, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(125, 86, 162, 1), -20%)
+        Height: =41
+        Items: |-
+            =[   
+                "Jumbo foi refugado por RNC?",
+                "Sim",
+                "Não",
+                   
+            ]
+        PressedFill: =RGBA(125, 86, 162, 1)
+        SelectionFill: =RGBA(125, 86, 162, 1)
+        Width: =424
+        X: =694
+        Y: =458
+        ZIndex: =11
+
+    TextInput8 As text:
+        BorderColor: =RGBA(125, 86, 162, 1)
+        Default: =""
+        Format: =TextFormat.Number
+        Height: =41
+        HintText: ="Peso devolvido (kg)"
+        HoverBorderColor: =RGBA(125, 86, 162, 1)
+        Width: =424
+        X: =694
+        Y: =316
+        ZIndex: =12
+
+    TextInput9 As text:
+        BorderColor: =RGBA(125, 86, 162, 1)
+        Default: =""
+        Format: =TextFormat.Number
+        Height: =41
+        HintText: ="Peso refugado (kg)"
+        HoverBorderColor: =RGBA(125, 86, 162, 1)
+        Width: =424
+        X: =694
+        Y: =526
+        ZIndex: =13
+
+    Button2 As button:
+        Fill: =RGBA(125, 86, 162, 1)
+        Height: =58
+        HoverFill: =ColorFade(RGBA(125, 86, 162, 1), -20%)
+        Italic: =
+        OnSelect: |-
+            =Patch(
+                Recebimentojumbos,
+                {
+                    Title: User().FullName,
+                    Data:DateTimeValue (Data.SelectedDate),
+                    Turno:Text (turno.SelectedText.Value),
+                    Turma:Text (turma.SelectedText.Value),
+                    Máquina:Text (maquina.SelectedText.Value),
+                    Nomeoperador:Text (op_linha.SelectedText.Value),
+                    Supervisor: Text (supervisor.SelectedText.Value),
+                    Nomeempilhador:Text (empilhador.SelectedText.Value),
+                    Assistente: Text (assistente.Text),
+                    Produto: Text (produto.SelectedText.Value),
+                    NIjumbo:Value (TextInput1_ni.Text),
+                    Lote: Text (TextInput1_lote.Text),
+                    Njumbo: Text (TextInput1_n.Text),
+                    Peso: Value (TextInput1_peso.Text),
+                    Devolvido:Text (Dropdown5.SelectedText.Value),
+                    Pesodevolvido:Value (TextInput8.Text),
+                    Refugado:Text (Dropdown6.SelectedText.Value),   
+                    Pesorefugado:Value (TextInput9.Text)
+                }
+            );
+            Navigate(tela1,ScreenTransition.Fade);
+            Notify("Seus dados foram enviados com sucesso!",NotificationType.Success);
+            Reset(turno);Reset(turma);Reset(maquina);Reset(empilhador);Reset(assistente);Reset(supervisor);Reset(op_linha);Reset(TextInput9);Reset(TextInput8);Reset(Dropdown6);Reset(Dropdown5);Reset(produto);Reset(TextInput1_peso);Reset(TextInput1_n);Reset(TextInput1_lote);Reset(TextInput1_ni)
+        Size: =18
+        Text: ="Concluir"
+        X: =1136
+        Y: =636
+        ZIndex: =14
+
