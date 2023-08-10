@@ -32,7 +32,7 @@ Telainicial As screen:
         PressedFill: =RGBA(125, 86, 162, 1)
         SelectionFill: =RGBA(125, 86, 162, 1)
         Width: =355
-        X: =247
+        X: =275
         Y: =321
         ZIndex: =3
 
@@ -50,28 +50,28 @@ Telainicial As screen:
         PressedFill: =RGBA(125, 86, 162, 1)
         SelectionFill: =RGBA(125, 86, 162, 1)
         Width: =355
-        X: =642
+        X: =670
         Y: =321
         ZIndex: =4
 
-    drop_maquina As dropdown:
+    maquina As dropdown:
         BorderColor: =RGBA(125, 86, 162, 1)
         ChevronBackground: =RGBA(125, 86, 162, 1)
         ChevronHoverBackground: =ColorFade(RGBA(125, 86, 162, 1), -20%)
-        Height: =53
+        Height: =55
         Items: |-
             =[   
-                "Selecione a máquina",
-                "Rebobinadeira",
-                "Duplicadora",
+                "SELECIONE A MÁQUINA",
+                "REBOBINADEIRA",
+                "DUPLICADORA",
                    
             ]
         PressedFill: =RGBA(125, 86, 162, 1)
         SelectionFill: =RGBA(125, 86, 162, 1)
         Size: =20
-        Width: =317
-        X: =266
-        Y: =580
+        Width: =352
+        X: =276
+        Y: =567
         ZIndex: =6
 
     L_Maquina As label:
@@ -82,7 +82,7 @@ Telainicial As screen:
         Size: =18
         Text: ="MÁQUINA"
         Width: =317
-        X: =266
+        X: =294
         Y: =505
         ZIndex: =7
 
@@ -110,7 +110,7 @@ Telainicial As screen:
         PressedFill: =RGBA(125, 86, 162, 1)
         SelectionFill: =RGBA(125, 86, 162, 1)
         Width: =355
-        X: =247
+        X: =275
         Y: =409
         ZIndex: =8
 
@@ -121,7 +121,7 @@ Telainicial As screen:
         Height: =65
         Items: |-
             =[   
-               "Selecione o supervisor",
+               "SELECIONE O SUPERVISOR",
                 "Airison",
                 "Nelson",
                 "Jefferson",
@@ -130,7 +130,7 @@ Telainicial As screen:
         PressedFill: =RGBA(125, 86, 162, 1)
         SelectionFill: =RGBA(125, 86, 162, 1)
         Width: =352
-        X: =645
+        X: =673
         Y: =409
         ZIndex: =9
 
@@ -146,11 +146,15 @@ Telainicial As screen:
         FocusedBorderColor: =ColorFade(Self.Fill, -75%)
         Height: =98
         HoverFill: =ColorFade(RGBA(125, 86, 162, 1), -20%)
-        OnSelect: =Navigate(Relatórios,ScreenTransition.Fade)
+        OnSelect: |-
+            =If(turno.Selected.Value <> "SELECIONE O TURNO" && turma.Selected.Value <> "SELECIONE A TURMA" && op_linha.Selected.Value <> "SELECIONE O OPERADOR DA LINHA" && supervisor.Selected.Value <> "SELECIONE O SUPERVISOR" && maquina.Selected.Value <> "SELECIONE A MÁQUINA", 
+            Navigate(Relatórios,ScreenTransition.Fade),
+            Notify("Você esqueceu de preencher algo")
+            )
         Size: =16
         Text: ="RELATÓRIOS"
         Width: =269
-        X: =685
+        X: =713
         Y: =524
         ZIndex: =12
 

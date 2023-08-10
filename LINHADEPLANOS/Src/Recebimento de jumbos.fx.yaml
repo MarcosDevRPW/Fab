@@ -34,7 +34,7 @@
         Y: =29
         ZIndex: =4
 
-    TextInput1_ni As text:
+    recebimento_nijumbo As text:
         BorderColor: =RGBA(125, 86, 162, 1)
         Default: =""
         Format: =TextFormat.Number
@@ -45,7 +45,7 @@
         Y: =319
         ZIndex: =5
 
-    TextInput1_lote As text:
+    recebimento_lote As text:
         BorderColor: =RGBA(125, 86, 162, 1)
         Default: =""
         Format: =TextFormat.Number
@@ -56,7 +56,7 @@
         Y: =387
         ZIndex: =6
 
-    TextInput1_n As text:
+    recebimento_nºjumbo As text:
         BorderColor: =RGBA(125, 86, 162, 1)
         Default: =""
         Format: =TextFormat.Number
@@ -67,7 +67,7 @@
         Y: =458
         ZIndex: =7
 
-    TextInput1_peso As text:
+    recebimento_peso As text:
         BorderColor: =RGBA(125, 86, 162, 1)
         Default: =""
         Format: =TextFormat.Number
@@ -84,7 +84,7 @@
         ChevronHoverBackground: =ColorFade(RGBA(125, 86, 162, 1), -20%)
         Items: |-
             =[   
-                "Selecione o Produto",
+                "SELECIONE O PRODUTO",
                 "CPR",
                 "FLO INST",
                 "LA VIE",
@@ -99,7 +99,7 @@
         Y: =246
         ZIndex: =9
 
-    Dropdown5 As dropdown:
+    "'recebimento_ojumbofoidevolvidoparaestoque?' As dropdown":
         BorderColor: =RGBA(125, 86, 162, 1)
         ChevronBackground: =RGBA(125, 86, 162, 1)
         ChevronHoverBackground: =ColorFade(RGBA(125, 86, 162, 1), -20%)
@@ -118,7 +118,7 @@
         Y: =246
         ZIndex: =10
 
-    Dropdown6 As dropdown:
+    "'recebimento_jumborefugadoporrnc?' As dropdown":
         BorderColor: =RGBA(125, 86, 162, 1)
         ChevronBackground: =RGBA(125, 86, 162, 1)
         ChevronHoverBackground: =ColorFade(RGBA(125, 86, 162, 1), -20%)
@@ -137,7 +137,7 @@
         Y: =458
         ZIndex: =11
 
-    TextInput8 As text:
+    recebimento_pesodevolvido As text:
         BorderColor: =RGBA(125, 86, 162, 1)
         Default: =""
         Format: =TextFormat.Number
@@ -149,7 +149,7 @@
         Y: =316
         ZIndex: =12
 
-    TextInput9 As text:
+    recebimento_pesorefugado As text:
         BorderColor: =RGBA(125, 86, 162, 1)
         Default: =""
         Format: =TextFormat.Number
@@ -177,25 +177,47 @@
                     Máquina:Text (maquina.SelectedText.Value),
                     Nomeoperador:Text (op_linha.SelectedText.Value),
                     Supervisor: Text (supervisor.SelectedText.Value),
-                    Nomeempilhador:Text (empilhador.SelectedText.Value),
-                    Assistente: Text (assistente.Text),
+                    Nomeempilhador:Text (recebimento_empilhador.Text),
+                    Assistente: Text (recebimento_assistente.Text),
                     Produto: Text (produto.SelectedText.Value),
-                    NIjumbo:Value (TextInput1_ni.Text),
-                    Lote: Text (TextInput1_lote.Text),
-                    Njumbo: Text (TextInput1_n.Text),
-                    Peso: Value (TextInput1_peso.Text),
-                    Devolvido:Text (Dropdown5.SelectedText.Value),
-                    Pesodevolvido:Value (TextInput8.Text),
-                    Refugado:Text (Dropdown6.SelectedText.Value),   
-                    Pesorefugado:Value (TextInput9.Text)
+                    NIjumbo:Value (recebimento_nijumbo.Text),
+                    Lote: Text (recebimento_lote.Text),
+                    Njumbo: Text (recebimento_nºjumbo.Text),
+                    Peso: Value (recebimento_peso.Text),
+                    Devolvido:Text ('recebimento_ojumbofoidevolvidoparaestoque?'.SelectedText.Value),
+                    Pesodevolvido:Value (recebimento_pesodevolvido.Text),
+                    Refugado:Text ('recebimento_jumborefugadoporrnc?'.SelectedText.Value),   
+                    Pesorefugado:Value (recebimento_pesorefugado.Text)
                 }
             );
             Navigate(tela1,ScreenTransition.Fade);
             Notify("Seus dados foram enviados com sucesso!",NotificationType.Success);
-            Reset(turno);Reset(turma);Reset(maquina);Reset(empilhador);Reset(assistente);Reset(supervisor);Reset(op_linha);Reset(TextInput9);Reset(TextInput8);Reset(Dropdown6);Reset(Dropdown5);Reset(produto);Reset(TextInput1_peso);Reset(TextInput1_n);Reset(TextInput1_lote);Reset(TextInput1_ni)
+            Reset(recebimento_empilhador);Reset(recebimento_assistente);Reset(recebimento_pesorefugado);Reset(recebimento_pesodevolvido);Reset('recebimento_jumborefugadoporrnc?');Reset('recebimento_ojumbofoidevolvidoparaestoque?');Reset(produto);Reset(recebimento_peso);Reset(recebimento_nºjumbo);Reset(recebimento_lote);Reset(recebimento_nijumbo)
         Size: =18
         Text: ="Concluir"
         X: =1136
         Y: =636
         ZIndex: =14
+
+    recebimento_empilhador As text:
+        BorderColor: =RGBA(125, 86, 162, 1)
+        Default: =""
+        Format: =TextFormat.Number
+        HintText: ="Empilhador"
+        HoverBorderColor: =RGBA(125, 86, 162, 1)
+        Width: =328
+        X: =192
+        Y: =598
+        ZIndex: =15
+
+    recebimento_assistente As text:
+        BorderColor: =RGBA(125, 86, 162, 1)
+        Default: =""
+        Format: =TextFormat.Number
+        HintText: ="Assistente"
+        HoverBorderColor: =RGBA(125, 86, 162, 1)
+        Width: =328
+        X: =192
+        Y: =667
+        ZIndex: =16
 
