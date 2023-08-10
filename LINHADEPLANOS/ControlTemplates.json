@@ -13,6 +13,21 @@
     "OverridableProperties": {},
     "Version": "1.0"
   },
+  "Botão Informações": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/powercontrol/PowerApps_CoreControls_InfoButtonCanvas",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": true,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": false,
+    "LastModifiedTimestamp": "0",
+    "Name": "PowerApps_CoreControls_InfoButtonCanvas",
+    "OverridableProperties": {},
+    "TemplateDisplayName": "Botão Informações",
+    "Version": "0.0.14"
+  },
   "button": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,
@@ -68,6 +83,20 @@
     "Name": "dropdown",
     "OverridableProperties": {},
     "Version": "2.3.1"
+  },
+  "group": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/group",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": false,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": false,
+    "LastModifiedTimestamp": "0",
+    "Name": "group",
+    "OverridableProperties": {},
+    "Version": "1"
   },
   "groupContainer": {
     "FirstParty": true,

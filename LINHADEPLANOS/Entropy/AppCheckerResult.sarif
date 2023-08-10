@@ -606,6 +606,162 @@
               "message": {
                 "text": "Ocorreu um erro ao executar a regra app-InefficientDelayLoading."
               }
+            },
+            {
+              "associatedRule": {
+                "id": "app-InefficientDelayLoading",
+                "index": 4
+              },
+              "descriptor": {
+                "id": "app-InefficientDelayLoading"
+              },
+              "message": {
+                "text": "Ocorreu um erro ao executar a regra app-InefficientDelayLoading."
+              }
+            },
+            {
+              "associatedRule": {
+                "id": "app-InefficientDelayLoading",
+                "index": 4
+              },
+              "descriptor": {
+                "id": "app-InefficientDelayLoading"
+              },
+              "message": {
+                "text": "Ocorreu um erro ao executar a regra app-InefficientDelayLoading."
+              }
+            },
+            {
+              "associatedRule": {
+                "id": "app-InefficientDelayLoading",
+                "index": 4
+              },
+              "descriptor": {
+                "id": "app-InefficientDelayLoading"
+              },
+              "message": {
+                "text": "Ocorreu um erro ao executar a regra app-InefficientDelayLoading."
+              }
+            },
+            {
+              "associatedRule": {
+                "id": "app-InefficientDelayLoading",
+                "index": 4
+              },
+              "descriptor": {
+                "id": "app-InefficientDelayLoading"
+              },
+              "message": {
+                "text": "Ocorreu um erro ao executar a regra app-InefficientDelayLoading."
+              }
+            },
+            {
+              "associatedRule": {
+                "id": "app-InefficientDelayLoading",
+                "index": 4
+              },
+              "descriptor": {
+                "id": "app-InefficientDelayLoading"
+              },
+              "message": {
+                "text": "Ocorreu um erro ao executar a regra app-InefficientDelayLoading."
+              }
+            },
+            {
+              "associatedRule": {
+                "id": "app-InefficientDelayLoading",
+                "index": 4
+              },
+              "descriptor": {
+                "id": "app-InefficientDelayLoading"
+              },
+              "message": {
+                "text": "Ocorreu um erro ao executar a regra app-InefficientDelayLoading."
+              }
+            },
+            {
+              "associatedRule": {
+                "id": "app-InefficientDelayLoading",
+                "index": 4
+              },
+              "descriptor": {
+                "id": "app-InefficientDelayLoading"
+              },
+              "message": {
+                "text": "Ocorreu um erro ao executar a regra app-InefficientDelayLoading."
+              }
+            },
+            {
+              "associatedRule": {
+                "id": "app-InefficientDelayLoading",
+                "index": 4
+              },
+              "descriptor": {
+                "id": "app-InefficientDelayLoading"
+              },
+              "message": {
+                "text": "Ocorreu um erro ao executar a regra app-InefficientDelayLoading."
+              }
+            },
+            {
+              "associatedRule": {
+                "id": "app-InefficientDelayLoading",
+                "index": 4
+              },
+              "descriptor": {
+                "id": "app-InefficientDelayLoading"
+              },
+              "message": {
+                "text": "Ocorreu um erro ao executar a regra app-InefficientDelayLoading."
+              }
+            },
+            {
+              "associatedRule": {
+                "id": "app-InefficientDelayLoading",
+                "index": 4
+              },
+              "descriptor": {
+                "id": "app-InefficientDelayLoading"
+              },
+              "message": {
+                "text": "Ocorreu um erro ao executar a regra app-InefficientDelayLoading."
+              }
+            },
+            {
+              "associatedRule": {
+                "id": "app-InefficientDelayLoading",
+                "index": 4
+              },
+              "descriptor": {
+                "id": "app-InefficientDelayLoading"
+              },
+              "message": {
+                "text": "Ocorreu um erro ao executar a regra app-InefficientDelayLoading."
+              }
+            },
+            {
+              "associatedRule": {
+                "id": "app-InefficientDelayLoading",
+                "index": 4
+              },
+              "descriptor": {
+                "id": "app-InefficientDelayLoading"
+              },
+              "message": {
+                "text": "Ocorreu um erro ao executar a regra app-InefficientDelayLoading."
+              }
+            },
+            {
+              "associatedRule": {
+                "id": "app-InefficientDelayLoading",
+                "index": 4
+              },
+              "descriptor": {
+                "id": "app-InefficientDelayLoading"
+              },
+              "message": {
+                "text": "Ocorreu um erro ao executar a regra app-InefficientDelayLoading."
+              }
             }
           ]
         }
@@ -616,39 +772,29 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Recebimento de jumbos'.Button2.OnSelect"
+                  "fullyQualifiedName": "'Recebimento de jumbos'.Icon1_3.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Recebimento de jumbos'.Button2.OnSelect",
+                  "fullyQualifiedName": "'Recebimento de jumbos'.Icon1_3.TabIndex",
                   "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 5,
-                  "charOffset": 1066,
-                  "snippet": {
-                    "text": "tela1"
-                  }
                 }
               },
               "properties": {
-                "member": "OnSelect",
+                "member": "TabIndex",
                 "module": "Recebimento de jumbos",
-                "type": "'Recebimento de jumbos'.Button2"
+                "type": "'Recebimento de jumbos'.Icon1_3"
               }
             }
           ],
           "message": {
-            "arguments": [
-              "tela1"
-            ],
             "id": "issue"
           },
           "properties": {
-            "level": "High"
+            "level": "Medium"
           },
-          "ruleId": "app-ErrInvalidName",
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 0
         },
         {
@@ -656,19 +802,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Relatórios.Icon1_3.AccessibleLabel"
+                  "fullyQualifiedName": "'Recebimento de jumbos'.Icon1_3.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Relatórios.Icon1_3.AccessibleLabel",
+                  "fullyQualifiedName": "'Recebimento de jumbos'.Icon1_3.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Relatórios",
-                "type": "Relatórios.Icon1_3"
+                "module": "Recebimento de jumbos",
+                "type": "'Recebimento de jumbos'.Icon1_3"
               }
             }
           ],
@@ -680,36 +826,6 @@
           },
           "ruleId": "acc-AccessibleLabelNeeded",
           "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Relatórios.Icon1_3.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Relatórios.Icon1_3.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Relatórios",
-                "type": "Relatórios.Icon1_3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
         },
         {
           "locations": [
@@ -769,7 +885,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -986,19 +1102,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Telainicial.Icon2.AccessibleLabel"
+                  "fullyQualifiedName": "Telainicial.config.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Telainicial.Icon2.AccessibleLabel",
+                  "fullyQualifiedName": "Telainicial.config.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Telainicial",
-                "type": "Telainicial.Icon2"
+                "type": "Telainicial.config"
               }
             }
           ],
@@ -1016,19 +1132,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Telainicial.Icon2.TabIndex"
+                  "fullyQualifiedName": "Telainicial.config.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Telainicial.Icon2.TabIndex",
+                  "fullyQualifiedName": "Telainicial.config.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Telainicial",
-                "type": "Telainicial.Icon2"
+                "type": "Telainicial.config"
               }
             }
           ],
@@ -1039,26 +1155,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
+          "ruleIndex": 0
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Recebimento de jumbos'.produto.AccessibleLabel"
+                  "fullyQualifiedName": "'Recebimento de jumbos'.recebimento_produto.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Recebimento de jumbos'.produto.AccessibleLabel",
+                  "fullyQualifiedName": "'Recebimento de jumbos'.recebimento_produto.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Recebimento de jumbos",
-                "type": "'Recebimento de jumbos'.produto"
+                "type": "'Recebimento de jumbos'.recebimento_produto"
               }
             }
           ],
@@ -1316,19 +1432,49 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Recebimento de jumbos'.Icon1_4.AccessibleLabel"
+                  "fullyQualifiedName": "Relatórios.Icon1_2.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Recebimento de jumbos'.Icon1_4.AccessibleLabel",
+                  "fullyQualifiedName": "Relatórios.Icon1_2.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Relatórios",
+                "type": "Relatórios.Icon1_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Relatórios.Icon1_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Relatórios.Icon1_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Recebimento de jumbos",
-                "type": "'Recebimento de jumbos'.Icon1_4"
+                "module": "Relatórios",
+                "type": "Relatórios.Icon1_2"
               }
             }
           ],
@@ -1340,36 +1486,6 @@
           },
           "ruleId": "acc-AccessibleLabelNeeded",
           "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Recebimento de jumbos'.Icon1_4.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Recebimento de jumbos'.Icon1_4.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Recebimento de jumbos",
-                "type": "'Recebimento de jumbos'.Icon1_4"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
         },
         {
           "locations": [
@@ -1430,6 +1546,66 @@
           },
           "ruleId": "acc-AccessibleLabelNeeded",
           "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Configurações.InfoButtonCanvas1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Configurações.InfoButtonCanvas1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Configurações",
+                "type": "Configurações.InfoButtonCanvas1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.MIMMO_MITO-removebg-preview"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.MIMMO_MITO-removebg-preview",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "MIMMO_MITO-removebg-preview",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedMediaResources",
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -1528,20 +1704,20 @@
           "name": "PowerApps app checker",
           "rules": [
             {
-              "id": "app-ErrInvalidName",
+              "id": "acc-TabIndexShouldBeDefinedForInteractiveControl",
               "messageStrings": {
                 "issue": {
-                  "text": "Name isn't valid. '{0}' isn't recognized."
+                  "text": "Missing tab stop"
                 }
               },
               "properties": {
                 "componentType": "app",
                 "howToFix": [
-                  "Remove or correct the reference to the name that isn't valid."
+                  "Set TabIndex to 0 or greater to ensure that interactive elements have a tab stop."
                 ],
-                "level": "High",
-                "primaryCategory": "formula",
-                "whyFix": ""
+                "level": "Medium",
+                "primaryCategory": "accessibility",
+                "whyFix": "People who use the keyboard with your app will not be able to access this element without a tab stop."
               }
             },
             {
@@ -1562,20 +1738,20 @@
               }
             },
             {
-              "id": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+              "id": "app-UnusedMediaResources",
               "messageStrings": {
                 "issue": {
-                  "text": "Missing tab stop"
+                  "text": "Arquivos de mídia não utilizados"
                 }
               },
               "properties": {
                 "componentType": "app",
                 "howToFix": [
-                  "Set TabIndex to 0 or greater to ensure that interactive elements have a tab stop."
+                  "Remova o arquivo de mídia não utilizado no painel Mídia."
                 ],
                 "level": "Medium",
-                "primaryCategory": "accessibility",
-                "whyFix": "People who use the keyboard with your app will not be able to access this element without a tab stop."
+                "primaryCategory": "performance",
+                "whyFix": "Este arquivo de mídia não é referenciado por nenhuma fórmula de controle, portanto não é necessário. Sua remoção melhorará o desempenho."
               }
             },
             {

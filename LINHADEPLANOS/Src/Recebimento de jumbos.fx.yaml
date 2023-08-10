@@ -1,7 +1,7 @@
 "'Recebimento de jumbos' As screen":
 
     Rectangle3_6 As rectangle:
-        Fill: =RGBA(125, 86, 162, 1)
+        Fill: =RGBA(25, 56, 200, 1)
         Height: =157
         Width: =1366
         ZIndex: =1
@@ -21,67 +21,56 @@
         Size: =43
         Text: ="RECEBIMENTO DE JUMBOS"
         Width: =1366
-        Y: =5
         ZIndex: =3
 
-    Icon1_4 As icon.BackArrow:
-        Color: =RGBA(255, 255, 255, 1)
-        Height: =109
-        Icon: =Icon.BackArrow
-        OnSelect: =Navigate(Relatórios,ScreenTransition.Fade)
-        Width: =141
-        X: =28
-        Y: =29
-        ZIndex: =4
-
     recebimento_nijumbo As text:
-        BorderColor: =RGBA(125, 86, 162, 1)
+        BorderColor: =RGBA(25,56,200,100)
         Default: =""
         Format: =TextFormat.Number
         HintText: ="NI do jumbo"
-        HoverBorderColor: =RGBA(125, 86, 162, 1)
+        HoverBorderColor: =RGBA(25,56,200,100)
         Width: =328
-        X: =192
-        Y: =319
+        X: =254
+        Y: =263
         ZIndex: =5
 
     recebimento_lote As text:
-        BorderColor: =RGBA(125, 86, 162, 1)
+        BorderColor: =RGBA(25,56,200,100)
         Default: =""
         Format: =TextFormat.Number
         HintText: ="Lote"
-        HoverBorderColor: =RGBA(125, 86, 162, 1)
+        HoverBorderColor: =RGBA(25,56,200,100)
         Width: =328
-        X: =192
-        Y: =387
+        X: =254
+        Y: =331
         ZIndex: =6
 
     recebimento_nºjumbo As text:
-        BorderColor: =RGBA(125, 86, 162, 1)
+        BorderColor: =RGBA(25,56,200,100)
         Default: =""
         Format: =TextFormat.Number
         HintText: ="Nº do jumbo"
-        HoverBorderColor: =RGBA(125, 86, 162, 1)
+        HoverBorderColor: =RGBA(25,56,200,100)
         Width: =328
-        X: =192
-        Y: =458
+        X: =254
+        Y: =402
         ZIndex: =7
 
     recebimento_peso As text:
-        BorderColor: =RGBA(125, 86, 162, 1)
+        BorderColor: =RGBA(25,56,200,100)
         Default: =""
         Format: =TextFormat.Number
         HintText: ="Peso (kg)"
-        HoverBorderColor: =RGBA(125, 86, 162, 1)
+        HoverBorderColor: =RGBA(25,56,200,100)
         Width: =328
-        X: =192
-        Y: =527
+        X: =254
+        Y: =471
         ZIndex: =8
 
-    produto As dropdown:
-        BorderColor: =RGBA(125, 86, 162, 1)
-        ChevronBackground: =RGBA(125, 86, 162, 1)
-        ChevronHoverBackground: =ColorFade(RGBA(125, 86, 162, 1), -20%)
+    recebimento_produto As dropdown:
+        BorderColor: =RGBA(25, 56, 200, 1)
+        ChevronBackground: =RGBA(25, 56, 200, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(25,56,200,100), -20%)
         Items: |-
             =[   
                 "SELECIONE O PRODUTO",
@@ -93,16 +82,16 @@
                 "TPR 30",
                 "TUTTO",    
             ]
-        PressedFill: =RGBA(125, 86, 162, 1)
-        SelectionFill: =RGBA(125, 86, 162, 1)
-        X: =192
-        Y: =246
+        PressedFill: =RGBA(25,56,200,100)
+        SelectionFill: =RGBA(25, 56, 200, 1)
+        X: =254
+        Y: =190
         ZIndex: =9
 
     "'recebimento_ojumbofoidevolvidoparaestoque?' As dropdown":
-        BorderColor: =RGBA(125, 86, 162, 1)
-        ChevronBackground: =RGBA(125, 86, 162, 1)
-        ChevronHoverBackground: =ColorFade(RGBA(125, 86, 162, 1), -20%)
+        BorderColor: =RGBA(25,56,200,100)
+        ChevronBackground: =RGBA(25,56,200,100)
+        ChevronHoverBackground: =ColorFade(RGBA(25,56,200,100), -20%)
         Height: =41
         Items: |-
             =[   
@@ -111,17 +100,18 @@
                 "Não",
                    
             ]
-        PressedFill: =RGBA(125, 86, 162, 1)
-        SelectionFill: =RGBA(125, 86, 162, 1)
+        OnChange: =Reset(recebimento_pesodevolvido)
+        PressedFill: =RGBA(25,56,200,100)
+        SelectionFill: =RGBA(25,56,200,100)
         Width: =424
-        X: =694
-        Y: =246
+        X: =756
+        Y: =190
         ZIndex: =10
 
     "'recebimento_jumborefugadoporrnc?' As dropdown":
-        BorderColor: =RGBA(125, 86, 162, 1)
-        ChevronBackground: =RGBA(125, 86, 162, 1)
-        ChevronHoverBackground: =ColorFade(RGBA(125, 86, 162, 1), -20%)
+        BorderColor: =RGBA(25,56,200,100)
+        ChevronBackground: =RGBA(25,56,200,100)
+        ChevronHoverBackground: =ColorFade(RGBA(25,56,200,100), -20%)
         Height: =41
         Items: |-
             =[   
@@ -130,44 +120,71 @@
                 "Não",
                    
             ]
-        PressedFill: =RGBA(125, 86, 162, 1)
-        SelectionFill: =RGBA(125, 86, 162, 1)
+        OnChange: =Reset(recebimento_pesorefugado)
+        PressedFill: =RGBA(25,56,200,100)
+        SelectionFill: =RGBA(25,56,200,100)
         Width: =424
-        X: =694
-        Y: =458
+        X: =756
+        Y: =402
         ZIndex: =11
 
     recebimento_pesodevolvido As text:
-        BorderColor: =RGBA(125, 86, 162, 1)
+        BorderColor: =RGBA(25,56,200,100)
         Default: =""
         Format: =TextFormat.Number
         Height: =41
         HintText: ="Peso devolvido (kg)"
-        HoverBorderColor: =RGBA(125, 86, 162, 1)
+        HoverBorderColor: =RGBA(25,56,200,100)
+        Visible: =If('recebimento_ojumbofoidevolvidoparaestoque?'.Selected.Value = "Sim",true,false)
         Width: =424
-        X: =694
-        Y: =316
+        X: =756
+        Y: =260
         ZIndex: =12
 
     recebimento_pesorefugado As text:
-        BorderColor: =RGBA(125, 86, 162, 1)
+        BorderColor: =RGBA(25,56,200,100)
         Default: =""
         Format: =TextFormat.Number
         Height: =41
         HintText: ="Peso refugado (kg)"
-        HoverBorderColor: =RGBA(125, 86, 162, 1)
+        HoverBorderColor: =RGBA(25,56,200,100)
+        Visible: =If('recebimento_jumborefugadoporrnc?'.Selected.Value = "Sim",true,false)
         Width: =424
-        X: =694
-        Y: =526
+        X: =756
+        Y: =470
         ZIndex: =13
 
-    Button2 As button:
-        Fill: =RGBA(125, 86, 162, 1)
-        Height: =58
-        HoverFill: =ColorFade(RGBA(125, 86, 162, 1), -20%)
-        Italic: =
+    recebimento_empilhador As text:
+        BorderColor: =RGBA(25,56,200,100)
+        Default: =""
+        Format: =TextFormat.Number
+        HintText: ="Empilhador"
+        HoverBorderColor: =RGBA(25,56,200,100)
+        Width: =328
+        X: =254
+        Y: =542
+        ZIndex: =15
+
+    recebimento_assistente As text:
+        BorderColor: =RGBA(25,56,200,100)
+        Default: =""
+        Format: =TextFormat.Number
+        HintText: ="Assistente"
+        HoverBorderColor: =RGBA(25,56,200,100)
+        Width: =328
+        X: =254
+        Y: =611
+        ZIndex: =16
+
+    recebimento_concluir As button:
+        Fill: =RGBA(9, 33, 98, 1)
+        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+        Height: =65
+        HoverFill: =ColorFade(RGBA(25,56,200,100), -20%)
         OnSelect: |-
-            =Patch(
+            =If(recebimento_produto.Selected.Value <> "SELECIONE O PRODUTO" && IsBlank(recebimento_nijumbo) <> true && IsBlank(recebimento_lote) <> true && IsBlank(recebimento_nºjumbo) <> true && IsBlank(recebimento_peso) <> true && IsBlank(recebimento_empilhador) <> true && If(recebimento_pesodevolvido.Visible = true && IsBlank(recebimento_pesodevolvido),false,true) && IsBlank(recebimento_assistente.Text) <> true && If(recebimento_pesorefugado.Visible = true && IsBlank(recebimento_pesorefugado),false,true),
+            
+            Patch(
                 Recebimentojumbos,
                 {
                     Title: User().FullName,
@@ -179,7 +196,7 @@
                     Supervisor: Text (supervisor.SelectedText.Value),
                     Nomeempilhador:Text (recebimento_empilhador.Text),
                     Assistente: Text (recebimento_assistente.Text),
-                    Produto: Text (produto.SelectedText.Value),
+                    Produto: Text (recebimento_produto.SelectedText.Value),
                     NIjumbo:Value (recebimento_nijumbo.Text),
                     Lote: Text (recebimento_lote.Text),
                     Njumbo: Text (recebimento_nºjumbo.Text),
@@ -190,34 +207,44 @@
                     Pesorefugado:Value (recebimento_pesorefugado.Text)
                 }
             );
-            Navigate(tela1,ScreenTransition.Fade);
+            Navigate(Telasucesso,ScreenTransition.Fade);
             Notify("Seus dados foram enviados com sucesso!",NotificationType.Success);
-            Reset(recebimento_empilhador);Reset(recebimento_assistente);Reset(recebimento_pesorefugado);Reset(recebimento_pesodevolvido);Reset('recebimento_jumborefugadoporrnc?');Reset('recebimento_ojumbofoidevolvidoparaestoque?');Reset(produto);Reset(recebimento_peso);Reset(recebimento_nºjumbo);Reset(recebimento_lote);Reset(recebimento_nijumbo)
-        Size: =18
-        Text: ="Concluir"
-        X: =1136
-        Y: =636
-        ZIndex: =14
+            Reset(recebimento_empilhador);Reset(recebimento_assistente);Reset(recebimento_pesorefugado);Reset(recebimento_pesodevolvido);Reset('recebimento_jumborefugadoporrnc?');Reset('recebimento_ojumbofoidevolvidoparaestoque?');Reset(recebimento_produto);Reset(recebimento_peso);Reset(recebimento_nºjumbo);Reset(recebimento_lote);Reset(recebimento_nijumbo)
+            ,Notify("Você esqueceu de preencher algo",NotificationType.Error,5000)
+            )
+        Size: =16
+        Text: ="CONCLUIR"
+        Width: =213
+        X: =1089
+        Y: =639
+        ZIndex: =17
 
-    recebimento_empilhador As text:
-        BorderColor: =RGBA(125, 86, 162, 1)
-        Default: =""
-        Format: =TextFormat.Number
-        HintText: ="Empilhador"
-        HoverBorderColor: =RGBA(125, 86, 162, 1)
-        Width: =328
-        X: =192
-        Y: =598
-        ZIndex: =15
+    Group1_2 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =20
 
-    recebimento_assistente As text:
-        BorderColor: =RGBA(125, 86, 162, 1)
-        Default: =""
-        Format: =TextFormat.Number
-        HintText: ="Assistente"
-        HoverBorderColor: =RGBA(125, 86, 162, 1)
-        Width: =328
-        X: =192
-        Y: =667
-        ZIndex: =16
+        Icon1_3 As icon.BackArrow:
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =79
+            Icon: =Icon.BackArrow
+            OnSelect: =Navigate(Relatórios,ScreenTransition.Fade)
+            Width: =148
+            X: =28
+            Y: =16
+            ZIndex: =18
+
+        label_voltar_2 As label:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =62
+            Size: =24
+            Text: ="Voltar"
+            Width: =148
+            X: =28
+            Y: =95
+            ZIndex: =19
 

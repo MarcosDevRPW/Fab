@@ -1,14 +1,9 @@
 Telainicial As screen:
 
-    Rectangle3_1 As rectangle:
-        Fill: =RGBA(125, 86, 162, 1)
-        Height: =177
-        Width: =1366
-        ZIndex: =1
-
     titulo As label:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(25, 56, 200, 1)
         FontWeight: =FontWeight.Bold
         Height: =177
         Size: =43
@@ -17,9 +12,9 @@ Telainicial As screen:
         ZIndex: =2
 
     turno As dropdown:
-        BorderColor: =RGBA(125, 86, 162, 1)
-        ChevronBackground: =RGBA(125, 86, 162, 1)
-        ChevronHoverBackground: =ColorFade(RGBA(125, 86, 162, 1), -20%)
+        BorderColor: =RGBA(25, 56, 200, 1)
+        ChevronBackground: =RGBA(25, 56, 200, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(25,56,200,100), -20%)
         Height: =65
         Items: |-
             =[   
@@ -29,17 +24,17 @@ Telainicial As screen:
                 "TURNO 3",
                 
             ]
-        PressedFill: =RGBA(125, 86, 162, 1)
-        SelectionFill: =RGBA(125, 86, 162, 1)
+        PressedFill: =RGBA(25,56,200,100)
+        SelectionFill: =RGBA(25, 56, 200, 1)
         Width: =355
-        X: =275
-        Y: =321
+        X: =292
+        Y: =320
         ZIndex: =3
 
     turma As dropdown:
-        BorderColor: =RGBA(125, 86, 162, 1)
-        ChevronBackground: =RGBA(125, 86, 162, 1)
-        ChevronHoverBackground: =ColorFade(RGBA(125, 86, 162, 1), -20%)
+        BorderColor: =RGBA(25, 56, 200, 1)
+        ChevronBackground: =RGBA(25, 56, 200, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(25,56,200,100), -20%)
         Height: =65
         Items: |-
             =[   
@@ -47,17 +42,17 @@ Telainicial As screen:
                 "TURMA A",
                 "TURMA B"    
             ]
-        PressedFill: =RGBA(125, 86, 162, 1)
-        SelectionFill: =RGBA(125, 86, 162, 1)
+        PressedFill: =RGBA(25,56,200,100)
+        SelectionFill: =RGBA(25, 56, 200, 1)
         Width: =355
-        X: =670
-        Y: =321
+        X: =687
+        Y: =320
         ZIndex: =4
 
     maquina As dropdown:
-        BorderColor: =RGBA(125, 86, 162, 1)
-        ChevronBackground: =RGBA(125, 86, 162, 1)
-        ChevronHoverBackground: =ColorFade(RGBA(125, 86, 162, 1), -20%)
+        BorderColor: =RGBA(25, 56, 200, 1)
+        ChevronBackground: =RGBA(25, 56, 200, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(25,56,200,100), -20%)
         Height: =55
         Items: |-
             =[   
@@ -66,30 +61,30 @@ Telainicial As screen:
                 "DUPLICADORA",
                    
             ]
-        PressedFill: =RGBA(125, 86, 162, 1)
-        SelectionFill: =RGBA(125, 86, 162, 1)
+        PressedFill: =RGBA(25,56,200,100)
+        SelectionFill: =RGBA(25,56,200,100)
         Size: =20
         Width: =352
-        X: =276
-        Y: =567
+        X: =293
+        Y: =566
         ZIndex: =6
 
     L_Maquina As label:
         Align: =Align.Center
-        Fill: =RGBA(216, 204, 224, 1)
+        Fill: =RGBA(153, 207, 236, 1)
         FontWeight: =FontWeight.Bold
         Height: =56
         Size: =18
         Text: ="MÁQUINA"
         Width: =317
-        X: =294
-        Y: =505
+        X: =311
+        Y: =504
         ZIndex: =7
 
     op_linha As dropdown:
-        BorderColor: =RGBA(125, 86, 162, 1)
-        ChevronBackground: =RGBA(125, 86, 162, 1)
-        ChevronHoverBackground: =ColorFade(RGBA(125, 86, 162, 1), -20%)
+        BorderColor: =RGBA(25, 56, 200, 1)
+        ChevronBackground: =RGBA(25, 56, 200, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(25,56,200,100), -20%)
         Height: =65
         Items: |-
             =[   
@@ -107,17 +102,17 @@ Telainicial As screen:
                 "Ervangelo Brito",
                 
             ]
-        PressedFill: =RGBA(125, 86, 162, 1)
-        SelectionFill: =RGBA(125, 86, 162, 1)
+        PressedFill: =RGBA(25,56,200,100)
+        SelectionFill: =RGBA(25, 56, 200, 1)
         Width: =355
-        X: =275
-        Y: =409
+        X: =292
+        Y: =408
         ZIndex: =8
 
     supervisor As dropdown:
-        BorderColor: =RGBA(125, 86, 162, 1)
-        ChevronBackground: =RGBA(125, 86, 162, 1)
-        ChevronHoverBackground: =ColorFade(RGBA(125, 86, 162, 1), -20%)
+        BorderColor: =RGBA(25, 56, 200, 1)
+        ChevronBackground: =RGBA(25, 56, 200, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(25,56,200,100), -20%)
         Height: =65
         Items: |-
             =[   
@@ -127,11 +122,11 @@ Telainicial As screen:
                 "Jefferson",
                 
             ]
-        PressedFill: =RGBA(125, 86, 162, 1)
-        SelectionFill: =RGBA(125, 86, 162, 1)
+        PressedFill: =RGBA(25,56,200,100)
+        SelectionFill: =RGBA(25, 56, 200, 1)
         Width: =352
-        X: =673
-        Y: =409
+        X: =690
+        Y: =408
         ZIndex: =9
 
     Image1 As image:
@@ -142,10 +137,10 @@ Telainicial As screen:
         ZIndex: =11
 
     Button2_9 As button:
-        Fill: =RGBA(71, 35, 105, 1)
+        Fill: =RGBA(9, 33, 98, 1)
         FocusedBorderColor: =ColorFade(Self.Fill, -75%)
         Height: =98
-        HoverFill: =ColorFade(RGBA(125, 86, 162, 1), -20%)
+        HoverFill: =ColorFade(RGBA(25,56,200,100), -20%)
         OnSelect: |-
             =If(turno.Selected.Value <> "SELECIONE O TURNO" && turma.Selected.Value <> "SELECIONE A TURMA" && op_linha.Selected.Value <> "SELECIONE O OPERADOR DA LINHA" && supervisor.Selected.Value <> "SELECIONE O SUPERVISOR" && maquina.Selected.Value <> "SELECIONE A MÁQUINA", 
             Navigate(Relatórios,ScreenTransition.Fade),
@@ -154,35 +149,29 @@ Telainicial As screen:
         Size: =16
         Text: ="RELATÓRIOS"
         Width: =269
-        X: =713
-        Y: =524
+        X: =730
+        Y: =523
         ZIndex: =12
 
-    Image2 As image:
-        Height: =184
-        Image: ='MIMMO_MITO-removebg-preview'
-        Width: =299
-        X: =5
-        ZIndex: =13
-
     Data As datepicker:
-        BorderColor: =RGBA(125, 86, 162, 1)
+        BorderColor: =RGBA(25, 56, 200, 1)
         DefaultDate: =If(Hour(Now()) <= 23 && Hour(Now()) >= 6,Today(),Today()-1)
         Height: =91
-        IconBackground: =RGBA(125, 86, 162, 1)
+        IconBackground: =RGBA(25,56,200,100)
         Size: =24
         Width: =237
-        X: =546
-        Y: =206
+        X: =563
+        Y: =205
         ZIndex: =14
 
-    Icon2 As icon.Settings:
-        Color: =RGBA(125, 86, 162, 1)
+    config As icon.Settings:
+        Color: =RGBA(9, 33, 98, 1)
         Height: =119
         Icon: =Icon.Settings
         OnSelect: =Navigate(Configurações,ScreenTransition.Fade)
+        Tooltip: ="Configurações"
         Width: =126
-        X: =27
-        Y: =622
+        X: =39
+        Y: =621
         ZIndex: =15
 
