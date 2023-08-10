@@ -79,9 +79,7 @@ Configurações As screen:
         ZIndex: =7
 
     "InfoButtonCanvas1 As 'Botão Informações'":
-        Content: |-
-            ="Você pode adicionar pessoas ao grupo do teams!.
-            Elas terão acesso ao aplicativo"
+        Content: ="Aqui você pode conceder o acesso do aplicativo."
         DisplayMode: =DisplayMode.Edit
         Height: =42
         IconSize: ='InfoButtonCanvas.IconSize'.Large

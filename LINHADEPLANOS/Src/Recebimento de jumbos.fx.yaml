@@ -207,6 +207,7 @@
                     Pesorefugado:Value (recebimento_pesorefugado.Text)
                 }
             );
+            UpdateContext({recebimento_var_enviandodados: false});
             Navigate(Telasucesso,ScreenTransition.Fade);
             Notify("Seus dados foram enviados com sucesso!",NotificationType.Success);
             Reset(recebimento_empilhador);Reset(recebimento_assistente);Reset(recebimento_pesorefugado);Reset(recebimento_pesodevolvido);Reset('recebimento_jumborefugadoporrnc?');Reset('recebimento_ojumbofoidevolvidoparaestoque?');Reset(recebimento_produto);Reset(recebimento_peso);Reset(recebimento_nºjumbo);Reset(recebimento_lote);Reset(recebimento_nijumbo)
@@ -222,7 +223,7 @@
     containerenviandodados As groupContainer:
         Fill: =RGBA(0, 0, 0, 0.41)
         Height: =768
-        Visible: =false
+        Visible: =recebimento_var_enviandodados
         Width: =1366
         ZIndex: =20
 
