@@ -1,22 +1,2 @@
 Screen2 As screen:
 
-    "Spinner1 As 'Controle giratório'":
-        DisplayMode: =DisplayMode.Edit
-        Height: =90
-        OnChange: |-
-            =UpdateContext({numero:numero+1})
-        SpinnerSize: ='Spinner.SpinnerSize'.Huge
-        Width: =133
-        X: =579
-        Y: =312
-        ZIndex: =1
-
-    labelenviando As label:
-        Height: =45
-        Text: |
-            ="ENVIANDO DADOS..."
-        Width: =205
-        X: =532
-        Y: =402
-        ZIndex: =2
-

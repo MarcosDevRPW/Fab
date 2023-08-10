@@ -183,7 +183,7 @@
         HoverFill: =ColorFade(RGBA(25,56,200,100), -20%)
         OnSelect: |-
             =If(recebimento_produto.Selected.Value <> "SELECIONE O PRODUTO" && IsBlank(recebimento_nijumbo) <> true && IsBlank(recebimento_lote) <> true && IsBlank(recebimento_nºjumbo) <> true && IsBlank(recebimento_peso) <> true && IsBlank(recebimento_empilhador) <> true && If(recebimento_pesodevolvido.Visible = true && IsBlank(recebimento_pesodevolvido),false,true) && IsBlank(recebimento_assistente.Text) <> true && If(recebimento_pesorefugado.Visible = true && IsBlank(recebimento_pesorefugado),false,true),
-            
+            UpdateContext({recebimento_var_enviandodados: true});
             Patch(
                 Recebimentojumbos,
                 {
@@ -218,6 +218,36 @@
         X: =1089
         Y: =639
         ZIndex: =17
+
+    containerenviandodados As groupContainer:
+        Fill: =RGBA(0, 0, 0, 0.41)
+        Height: =768
+        Visible: =false
+        Width: =1366
+        ZIndex: =20
+
+        "enviandodados As 'Controle giratório'":
+            DisplayMode: =DisplayMode.Edit
+            Height: =768
+            OnChange: |-
+                =UpdateContext({numero:numero+1})
+            SpinnerSize: ='Spinner.SpinnerSize'.Huge
+            Width: =1366
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+        labelenviando As label:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =55
+            Size: =19
+            Text: |
+                ="ENVIANDO DADOS..."
+            Width: =1366
+            Y: =412
+            ZIndex: =2
 
     Group1_2 As group:
         Height: =5
